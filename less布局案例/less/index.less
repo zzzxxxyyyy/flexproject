@@ -1,0 +1,119 @@
+// 导入样式
+@import "./base";
+@import "./normalize";
+
+@rem:37.5rem;
+
+body{
+    background-color:  #F0F0F0;;
+}
+// 主体部分
+.main{
+    margin-bottom:(50/@rem);
+    .banner li img{
+        height: (160/@rem);
+    }
+    // 活动标题
+    h4{
+        display: block;
+        height: (40/@rem);
+        line-height: (40/@rem);
+        margin-left: (15/@rem);
+        font-size: (14/@rem);
+        color: #3c3c3c;
+    }
+    // 活动区域
+    .item {
+        .pic{
+            height: (160/@rem);
+            position: relative;
+            // 字体图标
+            i{
+                color: #fff;
+                position: absolute;
+                right: (24/@rem);
+                top: (18/@rem);
+                font-size: (24/@rem);
+            }
+            // 活动状态
+            .active{
+                position: absolute;
+                left: (15/@rem);
+                top: (-5/@rem);
+                font-size: (12/@rem);
+                color: #fff;
+                line-height: (25/@rem);
+                text-align: center;
+                width: (68/@rem);
+                height: (29/@rem);
+                background-image: url(../images/status_active.png);
+                background-size: contain;
+                &.off{
+                    background-image: url(../images/status_default.png);
+                }
+            }
+        }
+        .txt{
+            background-color: #fff;
+            padding: (10/@rem) (15/@rem);
+            .top{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: (16/@rem);
+                h5{
+                    font-weight: 400;
+                    width: (295/@rem);
+                    color: #3C3C3C;
+                    font-size: (15/@rem);
+                }
+                p{
+                    color: #FE6249 ;
+                    font-size: (15/@rem);
+                }
+            }
+            .bootm{
+                display: flex;
+                color: #B4B4B4;
+                font-size: (11/@rem);
+                p{
+                    margin-right: (15/@rem);
+                    i{
+                        font-size: (11/@rem);
+                    }
+                }
+
+            }
+          
+            
+        }
+    }
+
+}
+footer{
+    position: fixed;
+    left: 0;
+   bottom: 0;
+    width: 100%;
+    height: (50/@rem);
+    background-color: #FECA49;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+   a{
+     color: #D78B09;
+     font-size: (11/@rem);
+    .iconfont{
+        font-size: (24/@rem);
+       
+       
+    }
+    
+    &.current{
+        color: #fff;
+
+    }
+ }
+}
+   
+
